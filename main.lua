@@ -773,3 +773,53 @@ end)
 
             
 })
+
+local Button = MainTab:CreateButton({
+   Name = "CRASH SERVER LOL",
+   Callback = function()
+		function sov()
+	local sov = Instance.new("Sound")
+	sov.Parent = game.SoundService
+	sov.SoundId = "rbxassetid://7854285068"
+	sov.Volume = 10
+	sov.RollOffMaxDistance = 100000
+	sov.RollOffMinDistance = 100000
+	sov.Looped = true
+	sov:Play()
+end
+local so = Instance.new("Sound")
+so.Parent = game.SoundService
+so.SoundId = "rbxassetid://157636218"
+so.Volume = 10
+so.RollOffMaxDistance = 100000
+so.RollOffMinDistance = 100000
+so.Looped = false
+so:Play()
+spawn(function()
+	while true do wait()
+		local co = Instance.new("ColorCorrectionEffect")
+		co.Parent = game.Lighting
+		co.Saturation = math.random(0,10000)
+		co.TintColor = Color3.fromRGB(255, 0, 0)
+		wait()
+		co:Destroy()
+	end
+end)
+function n()
+	local t = Instance.new("Message")
+	t.Parent = workspace
+	t.Text = " Server Connection Lost Retrying. Server Connection Lost Retrying. Server Connection Lost Retrying. Server Connection Lost Retrying. Server Connection Lost Retrying. Server Connection Lost Retrying. Server Connection Lost Retrying. "
+	n()
+end
+wait()
+local h = Instance.new("Hint")
+h.Parent = workspace
+h.Text = "\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 5 Seconds Until I crash the game "
+wait(6)
+sov()
+while true do wait()
+	n()
+	n()
+end
+   end,
+})
